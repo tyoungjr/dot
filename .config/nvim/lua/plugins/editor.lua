@@ -99,17 +99,19 @@ return {
   -- Project management
   {
     "ahmedkhalf/project.nvim",
-    opts = {
-      patterns = {
-        "CMakeLists.txt",
-        "CMakePresets.json",
-        ".git",
-        "package.json",
-        "requirements.txt",
-        "*.sln",
-      },
-      detection_methods = { "pattern", "lsp" },
-      silent_chdir = true,
-    },
+    config = function()
+      require("project_nvim").setup({
+        patterns = {
+          "CMakeLists.txt",
+          "CMakePresets.json",
+          ".git",
+          "package.json",
+          "requirements.txt",
+          "*.sln",
+        },
+        detection_methods = { "pattern", "lsp" },
+        silent_chdir = true,
+      })
+    end,
   },
 }
