@@ -4,6 +4,9 @@
 -- Respect .editorconfig settings
 vim.g.editorconfig = true
 
+-- Disable autoformat by default (toggle with <leader>uF)
+vim.g.autoformat = false
+
 -- Set leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"

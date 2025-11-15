@@ -46,14 +46,14 @@ return {
     opts = {
       filesystem = {
         filtered_items = {
-          visible = false,
+          visible = true,  -- Show hidden/filtered items
           hide_dotfiles = false,
-          hide_gitignored = true,
+          hide_gitignored = false,  -- Show git-ignored files too
           hide_by_name = {
-            "node_modules",
-            ".git",
-            "build",
-            "thirdparty",
+            -- "node_modules",  -- Commented out - will now show
+            -- ".git",  -- Commented out - will now show
+            -- "build",  -- Commented out - will now show
+            -- "thirdparty",  -- Commented out - will now show
           },
           never_show = {
             ".DS_Store",

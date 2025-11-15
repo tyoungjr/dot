@@ -114,6 +114,11 @@ return {
         cpp = { "clang_format" },
         c = { "clang_format" },
       },
+      formatters = {
+        clang_format = {
+          prepend_args = { "--fallback-style=none" }, -- Use .clang-format or EditorConfig
+        },
+      },
     },
   },
 }

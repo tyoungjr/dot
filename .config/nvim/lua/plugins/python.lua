@@ -44,6 +44,11 @@ return {
       formatters_by_ft = {
         python = { "black", "isort" },
       },
+      formatters = {
+        black = {
+          prepend_args = { "--line-length", "88" }, -- Black default, override with pyproject.toml if needed
+        },
+      },
     },
   },
 

@@ -36,6 +36,11 @@ return {
         javascript = { "prettier" },
         json = { "prettier" },
       },
+      formatters = {
+        prettier = {
+          prepend_args = { "--editorconfig" }, -- Respect .editorconfig
+        },
+      },
     },
   },
 }

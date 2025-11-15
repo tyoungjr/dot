@@ -28,14 +28,15 @@ autocmd("FileType", {
   end,
 })
 
--- Auto-format on save
-autocmd("BufWritePre", {
-  group = augroup("AutoFormat", { clear = true }),
-  pattern = "*.cpp,*.h,*.cs,*.py,*.js,*.proto,*.cmake",
-  callback = function()
-    require("conform").format({ async = false, lsp_fallback = true })
-  end,
-})
+-- Auto-format on save (disabled)
+-- Uncomment to enable auto-format on save
+-- autocmd("BufWritePre", {
+--   group = augroup("AutoFormat", { clear = true }),
+--   pattern = "*.cpp,*.h,*.cs,*.py,*.js,*.proto,*.cmake",
+--   callback = function()
+--     require("conform").format({ async = false, lsp_fallback = true })
+--   end,
+-- })
 
 -- CMake file detection
 autocmd({ "BufRead", "BufNewFile" }, {

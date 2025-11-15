@@ -25,13 +25,18 @@ return {
     },
   },
 
-  -- CMake formatting
-  {
-    "stevearc/conform.nvim",
-    opts = {
-      formatters_by_ft = {
-        cmake = { "cmake_format" },
-      },
-    },
-  },
+  -- CMake formatting (disabled)
+  -- {
+  --   "stevearc/conform.nvim",
+  --   opts = {
+  --     formatters_by_ft = {
+  --       cmake = { "cmake_format" },
+  --     },
+  --     formatters = {
+  --       cmake_format = {
+  --         prepend_args = { "--tab-size=4" }, -- Use 4 spaces to match .editorconfig
+  --       },
+  --     },
+  --   },
+  -- },
 }
