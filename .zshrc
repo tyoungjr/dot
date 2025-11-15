@@ -101,6 +101,9 @@ export EDITOR="nvim"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ll="ls -lah"
+alias zshconfig"nvim ~/.zshrc"
 . "$HOME/.asdf/asdf.sh"
 
 source <(fzf --zsh)
@@ -112,7 +115,7 @@ export PATH="$PATH:/Users/teejit/.local/bin"
 . "/Users/teejit/.deno/env"
 eval "$(rbenv init -)"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/Users/teejit/.asdf/installs/rust/1.86.0/bin:$PATH"
