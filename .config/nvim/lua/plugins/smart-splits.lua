@@ -9,8 +9,8 @@ return {
       ignored_filetypes = { "NvimTree", "neo-tree" },
       -- Default amount for cursor resize
       default_amount = 3,
-      -- Enable tmux integration
-      at_edge = "wrap",
+      -- at_edge = 'wrap' is not supported in Kitty, use 'stop' instead
+      at_edge = "stop",
       -- Resize mode (allows continuous resizing)
       resize_mode = {
         quit_key = "<ESC>",
