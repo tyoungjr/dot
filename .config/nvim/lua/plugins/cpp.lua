@@ -10,38 +10,8 @@ return {
     end,
   },
 
-  -- LSP for C++ (clangd)
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        clangd = {
-          cmd = {
-            "clangd",
-            "--background-index",
-            "--clang-tidy",
-            "--header-insertion=iwyu",
-            "--completion-style=detailed",
-            "--function-arg-placeholders",
-            "--fallback-style=llvm",
-          },
-          init_options = {
-            usePlaceholders = true,
-            completeUnimported = true,
-            clangdFileStatus = true,
-          },
-          root_dir = function(fname)
-            return require("lspconfig.util").root_pattern(
-              "CMakeLists.txt",
-              "CMakePresets.json",
-              "compile_commands.json",
-              ".git"
-            )(fname)
-          end,
-        },
-      },
-    },
-  },
+  -- NOTE: clangd LSP is configured by lazyvim.plugins.extras.lang.clangd extra
+  -- Do not add duplicate config here
 
   -- CMake integration
   {
