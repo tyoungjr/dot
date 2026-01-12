@@ -5,11 +5,13 @@ return {
   { "folke/noice.nvim", enabled = false },
 
   -- Enable snacks notifier as replacement for noice notifications
+  -- Disable snacks explorer - using neo-tree instead
   {
     "folke/snacks.nvim",
     opts = {
       notifier = { enabled = true },
-      input = { enabled = false },  -- Keep disabled to avoid conflicts
+      input = { enabled = false },
+      explorer = { enabled = false },  -- Use neo-tree instead
     },
   },
 }

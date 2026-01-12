@@ -115,7 +115,6 @@ export PATH="$PATH:/Users/teejit/.local/bin"
 . "/Users/teejit/.deno/env"
 eval "$(rbenv init -)"
 
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/Users/teejit/.asdf/installs/rust/1.86.0/bin:$PATH"
@@ -124,9 +123,17 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)
 
+
 "# The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/teejit/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 alias config='/usr/bin/git --git-dir=/Users/teejit/.cfg/ --work-tree=/Users/teejit'
+export PATH="/Users/teejit/zig:$PATH"
+export ANDROID_NDK_ROOT="/Applications/Unity/Hub/Editor/2022.3.62f3/PlaybackEngines/AndroidPlayer/NDK"
+
+export LFG_ANDROID_KEYSTORE_NAME="$HOME/keystores/debug.keystore"
+export LFG_ANDROID_KEYSTORE_PASSWORD="android"
+export LFG_ANDROID_KEYALIAS_NAME="androiddebugkey"
+export LFG_ANDROID_KEYALIAS_PASSWORD="android"
