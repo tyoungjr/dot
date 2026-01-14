@@ -129,7 +129,7 @@ fpath=(/Users/teejit/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
-alias config='/usr/bin/git --git-dir=/Users/teejit/.cfg/ --work-tree=/Users/teejit'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 export PATH="/Users/teejit/zig:$PATH"
 export ANDROID_NDK_ROOT="/Applications/Unity/Hub/Editor/2022.3.62f3/PlaybackEngines/AndroidPlayer/NDK"
 
